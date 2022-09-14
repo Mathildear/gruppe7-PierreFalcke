@@ -73,19 +73,7 @@ document
       offset: ["0.5 0.5", "1 1"]
    }
   )
-//   const lillevideo = document.querySelector("#videofil");
-//   lillevideo.pause();
- 
-//   scroll(
-//     ({ y }) => {
-//       if (!lillevideo.readyState) return;
-//       lillevideo.currentTime = lillevideo.duration * y.progress;
-//     },
-//     {
-//       target: document.querySelector(".videoarticle"),
-//       offset: ["-100vh", "end end"]
-//     }
-//   );
+
 
 const video = document.querySelector("#videofilmrulle");
 video.pause();
