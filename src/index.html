@@ -15,39 +15,29 @@
       href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pierre Falcke - Gruppe 7</title>
   </head>
   <body>
-    <main>
+    <main class="snap-y snap-mandatory overflow-hidden">
       <!-- _______SECTION1 - FORSIDE MED AVIS DER RULLER IND__________________________ -->
-      <section class=" h-screen relative">
-        <h1
-        class="absolute top-28 pl-36 z-30 font-h1Text text-6xl uppercase"
-      >
-        Uperfekt <br />er perfekt
-      </h1>
-        <div class="videocontainer sticky z-0 ml-auto mr-0 top-0 w-3/4">
+      <section class="relative h-screen snap-center snap-always">
+        <h1 class="absolute top-28 z-30 pl-36 font-h1Text text-6xl uppercase">
+          Uperfekt <br />er perfekt
+        </h1>
+        <div class="sticky top-0 z-0 ml-auto mr-0 w-3/4">
           <video
-            src="video/newspaper.mp4"
+            src="http://bellakezia.dk/kea3/tema10/video_tema10/avis.mp4"
             muted
             loop
             autoplay
             playsinline
             class="w-full"
-            id="videofil"
           ></video>
         </div>
-        
       </section>
       <!-- _______SECTION2 - PIERRE BLIVER MILLIONÆR__________________________ -->
-      <section class="flex h-screen items-center">
+      <section class="flex h-screen snap-center snap-always items-center pt-52">
         <div class="flex w-full items-center justify-evenly">
           <div class="parallaxcontainerp">
             <div>
@@ -63,23 +53,27 @@
               </p>
             </div>
           </div>
-          <!-- infoboks -->
-          <div class="parallaxcontainerinfo mt-10 w-1/4">
-            <div class="border-2 border-[#91f24b] bg-[#ebffdd] p-5">
-              <h3 class="text-lg font-semibold">Om Pierre Falcke</h3>
-              <ul class="list-disc pl-5 pt-2 text-sm">
-                <li>
-                  Pierre sælger 2 millioner fotos om året. Det svarer til én
-                  fotolicens hvert 16. sekund.
-                </li>
-                <li>Du ser hans fotos ca. 2 gange om dagen.</li>
-              </ul>
+          
+          <div class="w-1/3">
+            <img class="w-full" src="img/pierre.jpeg" alt="Pierrebillede">
+            <!-- infoboks -->
+            <div class="parallaxcontainerinfo mt-10 w-full">
+              <div class="border-2 border-[#91f24b] bg-[#ebffdd] p-5">
+                <h3 class="text-lg font-semibold">Om Pierre Falcke</h3>
+                <ul class="list-disc pl-5 pt-2 text-sm">
+                  <li>
+                    Pierre sælger 2 millioner fotos om året. Det svarer til én
+                    fotolicens hvert 16. sekund.
+                  </li>
+                  <li>Du ser hans fotos ca. 2 gange om dagen.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- _______SECTION3 - PIERRES BERØMMELSE (BILLEDE AF DRENG TAGER BILLEDE)_________________________ -->
-      <section class="flex h-screen items-center">
+      <section class="flex h-screen snap-center items-center">
         <div class="flex w-full items-center justify-evenly">
           <div class="flex h-full w-1/3">
             <div id="barn" class="aspect-square h-full w-full"></div>
@@ -100,7 +94,7 @@
         </div>
       </section>
       <!-- _______SECTION4 - PIERRE TEENAGER - PHOTOSHOP__________________________ -->
-      <section class="h-screen">
+      <section class="h-screen snap-center">
         <div>
           <div class="parallaxcontainerp flex items-center justify-evenly">
             <div class="">
@@ -135,7 +129,7 @@
           <div class="mt-14 w-2/5 border-2 border-[#91f24b] bg-[#ebffdd] p-5">
             <h3 class="text-lg font-semibold">Hvad er stock-fotos?</h3>
             <ul class="list-disc pl-5 pt-2 text-sm">
-              <li>Billeder der kan købes fra et foto-webiste.</li>
+              <li>Billeder der kan købes fra et foto-website.</li>
               <li>
                 Bruges oftest af aviser til markedsførring samt indhold på
                 websites.
@@ -192,7 +186,7 @@
             <!-- STOCKFOTOS DER SKIFTER ANIMATION -->
             <div class="videocontainer sticky top-1/4 flex w-1/3">
               <video
-                src="video/stockpics.mp4"
+                src="http://bellakezia.dk/kea3/tema10/video_tema10/stockvideo.mp4"
                 muted
                 loop
                 autoplay
@@ -232,25 +226,59 @@
       </section>
       <!-- _______SECTION7 - EN NY BEGYNDELSE.. KAMERA FLYVER IND________________________________ -->
 
-      <section>
-        <h2 class="text-2xl font-semibold">En ny begyndelse</h2>
-        <div class="relative flex flex-wrap">
-          <img class="" src="img/omeha-kamera1.png" alt="kamera1" />
-          <img class="" src="img/kamera2.png" alt="kamera2" />
-          <img class="" src="img/nikko-kamera3.png" alt="kamera3" />
-          <img class="" src="img/sony-kamera4.png" alt="kamera4" />
-          <img class="" src="img/video-kamera5.png" alt="kamera5" />
+      <section class="relative flex h-screen items-center justify-center">
+        <div
+          id="glitchfontcontainer"
+          class="text-flicker-in-glow absolute z-20"
+        >
+          <h2 id="glitchfont" class="font-glitchText text-6xl">
+            En ny begyndelse
+          </h2>
         </div>
-        <p class="w-64 text-base">
-          Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han
-          har stadig lidt penge på kontoen, og studerer nu kunstfotografering på
-          fotoskolen Fatamorgana.
-          <br />
-          <br />
-          Han glæder sig over hver dags kunstneriske eksperimenter, og er for
-          første gang i sit liv rigtig stolt af sit arbejde. Som Pierre selv
-          udtrykker det...
-        </p>
+        <div class="kamerasamling relative flex h-96 w-96 flex-wrap">
+          <img
+            class="kamera1 absolute z-10"
+            src="img/omeha-kamera1.png"
+            alt="kamera1"
+          />
+          <img class="kamera2 absolute" src="img/kamera2.png" alt="kamera2" />
+          <img
+            class="kamera3 absolute"
+            src="img/nikko-kamera3.png"
+            alt="kamera3"
+          />
+          <img
+            class="kamera4 absolute"
+            src="img/sony-kamera4.png"
+            alt="kamera4"
+          />
+          <img
+            class="kamera5 absolute"
+            src="img/video-kamera5.png"
+            alt="kamera5"
+          />
+        </div>
+      </section>
+      <section class="flex h-screen items-center justify-evenly">
+        <div class="parallaxcontainerp">
+          <div>
+            <p class="w-64 text-base">
+              Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
+              han har stadig lidt penge på kontoen, og studerer nu
+              kunstfotografering på fotoskolen Fatamorgana.
+              <br />
+              <br />
+              Han glæder sig over hver dags kunstneriske eksperimenter, og er
+              for første gang i sit liv rigtig stolt af sit arbejde. Som Pierre
+              selv udtrykker det...
+            </p>
+          </div>
+        </div>
+        <div class="scrollzoom5 w-1/3">
+          <div class="scrollzoomb5">
+            <img src="img/glitch.webp" alt="glitchbilledebåd" />
+          </div>
+        </div>
       </section>
       <!-- _______SECTION8 - QUOTE INTERESSANTE LIGGER I FEJLEN...________________________________ -->
       <!-- QUOTE  -->
@@ -269,12 +297,12 @@
       <section class="h-screen">
         <div class="flex justify-center">
           <video
-            src="video/polaroid.mp4"
+            src="http://bellakezia.dk/kea3/tema10/video_tema10/polaroid.mp4"
             muted
             loop
             playsinline
             autoplay
-            class="w-2/3"
+            class="w-3/4"
             id="videofil"
           ></video>
         </div>
@@ -296,21 +324,25 @@
         </div>
       </section>
       <!-- _______SECTION10 - FILMRULLE________________________________ -->
-      <section class="pt-14">
-        <img class="w-full" src="img/filmrulle.png" alt="filmrulle" />
+      <section>
+        <a href="#timelapsevideo">
+          <img class="mt-60 w-full" src="img/filmrulle.png" alt="filmrulle" />
+        </a>
       </section>
-      <section class="sticky">
-        <div class="videocontainer sticky top-0 w-full">
+      <section class="sticky top-0">
+        <div class=" sticky top-0 w-full">
           <video
-            src="video/eksperimentel-video.mp4"
+            src="http://bellakezia.dk/kea3/tema10/video_tema10/eksperimentel-video.mp4"
             muted
             loop
             playsinline
+            autoplay
+            
             class="w-full"
-            id="videofilmrulle"
+            
           ></video>
         </div>
-        <div class="videoarticle h-screen"></div>
+        
       </section>
       <!-- _______SECTION11 - Genfødt + billeder________________________________ -->
       <section class="flex h-screen items-center justify-evenly">
@@ -328,64 +360,223 @@
           </div>
         </div>
         <div class="flex">
-          <img src="img/blue.png" alt="bluepic" />
-          <img src="img/skater.png" alt="skater" />
+          <div class="scrollrotate3">
+            <img
+              class="scrollrotateb3 h-[360px]"
+              src="img/blue.png"
+              alt="bluepic"
+            />
+          </div>
+          <div class="scrollrotate4">
+            <img
+              class="scrollrotateb4 h-[360px]"
+              src="img/skater.png"
+              alt="skater"
+            />
+          </div>
         </div>
       </section>
       <!-- _______SECTION12 - QUOTE JEG ER GENFØDT...________________________________ -->
       <section class="flex h-screen items-center justify-center">
         <!-- QUOTE  -->
-        <div class="flex items-center justify-center">
-          <q class="w-96 text-2xl italic"
+        <div class="scrollzoom3 flex items-center justify-center">
+          <q class="scrollzoomq3 w-96 text-2xl italic"
             >Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri.
             Jeg føler mig genfødt.</q
           >
         </div>
       </section>
-      <!-- _______SECTION13 - AFSLUTNING...________________________________ -->
-      <section class="h-screen">
-        <div class="">
-          <div class="ml-36">
+      <!-- _______SECTION13 - BILLEDEGALLERI -->
+      <section class="h-fit pb-20">
+        <h2 class="pl-36 text-2xl pb-8 font-semibold">Galleri</h2>
+<div class="grid grid-cols-6">
+  <picture>
+    <source
+      srcset="img/avif/sh.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/sh.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture>
+    <source
+      srcset="img/avif/sh-skidt.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/sh-skidt.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture>
+    <source
+      srcset="img/avif/gammel-film.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/gammel-film.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture>
+    <source
+      srcset="img/avif/ilford-sort-hvid-film.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/ilford-sort-hvid-film.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture>
+    <source
+      srcset="img/avif/lomo-smena.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/lomo-smena.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/lomo.avif"
+      type="image/avif"
+    />
+    <img
+      class="hover:scale-105"
+      src="img/webp/lomo.webp"
+      alt="forfatter"
+    />
+  </picture>
+  
+</div>
+<div class="grid grid-cols-3">
+  <picture class="h-full">
+    <source
+      srcset="img/avif/canon-eos-300-gammel-film.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/canon-eos-300-gammel-film.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/glitch.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/glitch.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/light-leaks.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/light-leaks.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/lomo-smena-17.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/lomo-smena-17.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/scan.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/scan.webp"
+      alt="forfatter"
+    />
+  </picture>
+  <picture class="h-full">
+    <source
+      srcset="img/avif/tynd-film.avif"
+      type="image/avif"
+    />
+    <img
+      class="h-full hover:scale-105"
+      src="img/webp/tynd-film.webp"
+      alt="forfatter"
+    />
+  </picture>
+</div>
+
+      </section>
+      <!-- _______SECTION14 - AFSLUTNING - bog og Footer...________________________________ -->
+      <section class="flex h-screen flex-wrap items-center overflow-hidden">
+        <div class="pl-36">
+          <div class="">
             <h2 class="text-2xl font-semibold">Pierre Falcke</h2>
             <p class="w-64 pt-8 text-base">
-              Vil du se mere af Pierres fotokunst?
+              Vil du se mere af Pierres fotokunst? - Så dyk ned I Falckes egne
+              ord i hans bog <span class="italic"> Lidt i fem</span>.
             </p>
+            <br />
           </div>
-          <div class="h-1/2 pl-36">
-            <img src="img/lidtifemlukket.png" alt="bog lukket" />
+          <br />
+          <div class="flex h-auto w-80 justify-evenly">
+            <div id="book" class="aspect-square h-full w-full"></div>
+          </div>
+        </div>
+        <!-- Footer er her -->
+        <div
+          class="scrollrotate5 footerinview justify-right flex bg-neutral-800 p-40 text-white lg:w-2/3"
+        >
+          <div class="scrollrotatef5">
+            <h4 class="border-b-2 border-white pb-2 text-3xl uppercase">
+              Credit
+            </h4>
+            <div class="pt-4">
+              <div class="pb-2">
+                <h5 class="text-xl">Tekst</h5>
+                <p class="pl-5 text-stone-300">Birgitte & Stefan</p>
+              </div>
+              <div class="pb-7">
+                <h5 class="text-xl">Grafik</h5>
+                <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
+              </div>
+              <div class="pb-7">
+                <h5 class="text-xl">Kode</h5>
+                <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
+              </div>
+              <div class="pb-44">
+                <h5 class="text-xl">Redaktør for digitale fortællinger</h5>
+                <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="flex justify-center bg-neutral-500 p-40 text-white">
-      <div class="w-1/3">
-        <h4
-          class="flex justify-center border-b-2 border-white pb-5 text-3xl uppercase"
-        >
-          Credit
-        </h4>
-        <div class="pt-4">
-          <div class="pb-7">
-            <h5 class="text-xl">Text</h5>
-            <p class="pl-5 text-stone-300">Birgitte & Stefan</p>
-          </div>
-          <div class="pb-7">
-            <h5 class="text-xl">Grafik</h5>
-            <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
-          </div>
-          <div class="pb-7">
-            <h5 class="text-xl">Kode</h5>
-            <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
-          </div>
-          <div class="pb-7">
-            <h5 class="text-xl">Redaktør for digitale fortællinger</h5>
-            <p class="pl-5 text-stone-300">Mathilde, Isabella & Puk</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
     <div
-      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-gradient-to-r from-black to-yellow-300"
+      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-gradient-to-r from-[#91f24b] to-[#ebffdd]"
     ></div>
     <script type="module" src="./main.js"></script>
   </body>

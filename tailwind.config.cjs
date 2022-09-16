@@ -6,7 +6,6 @@ module.exports = {
       fontFamily: {
         glitchText: "'Rubik Glitch', cursive",
         h1Text: "'IM Fell English', serif",
-        pText: "IBM Plex Mono', monospace",
       },
     },
   },
